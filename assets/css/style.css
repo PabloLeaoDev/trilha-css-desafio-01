@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import url('global.css');
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.banner {
+    width: 100%;
+    height: 605px;
+
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 0%, rgba(49, 169, 221, 0) 100%), url('../images/banner.png');
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    width: 510px;
+    height: 393px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 268px;
+    height: 268px;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
