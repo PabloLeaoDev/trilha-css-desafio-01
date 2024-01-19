@@ -1,5 +1,14 @@
 @charset "UTF-8";
+@import url('http://meyerweb.com/eric/tools/css/reset/ ');
 @import url('global.css');
+@font-face {
+    font-family: Raleway;
+    src: url('../font/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+:root {
+    --cor1: #3BA1CD;
+}
 
 body {
     width: 100vw;
@@ -9,12 +18,14 @@ body {
 .banner {
     width: 100%;
     height: 605px;
+    border-bottom: 3px solid var(--cor1);
 
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 0%, rgba(49, 169, 221, 0) 100%), url('../images/banner.png');
+    background-image: url('../images/banner.png'), linear-gradient(180deg,rgb(0, 0, 0) -30%, rgb(12, 28, 36), rgb(0, 0, 0) 130%);
 
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .banner-content {
@@ -25,18 +36,57 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    position: relative;
+    top: -70px;
 }
 
 .logo {
     width: 268px;
     height: 268px;
 
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
 
     border-radius: 50%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
+}
+
+header h1 {
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 40px;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin: 10px;
+}
+
+header p {
+    color: white;
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+header button {
+    color: var(--cor1);
+    background: transparent;
+    border: 2px solid currentColor;
+    padding: 10px;
+    width: 350px;
+
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+    letter-spacing: 3.36px;
 }
 
